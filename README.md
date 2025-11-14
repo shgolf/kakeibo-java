@@ -3,13 +3,18 @@
 
 ```
 kakeibo-java/
- ├ src/
- │   └ main/
- │       └ java/
- │           └ kakeibo/
- │               ├ domain/        ← お金の出入りの「中身」(Transaction, Category)
- │               ├ service/       ← 登録・集計などビジネスロジック
- │               └ ui/cli/        ← 今はCLI、あとで ui/gui を増やすイメージ
- ├ README.md
- └ .gitignore
+src/main/java/kakeibo/
+  ├ presentation/
+  │   └ cli/
+  │       └ Main.java              ← 今のメイン（UI）
+  ├ domain/
+  │   └ Transaction.java           ← お金の出入りの「モデル」
+  ├ service/
+  │   └ LedgerService.java         ← ビジネスロジック
+  ├ repository/
+  │ ├ LedgerRepository.java      ← データ層のインターフェース
+  │ └ InMemoryLedgerRepository.java  ← とりあえずメモリ実装
+  │   // 後で JsonLedgerRepository を追加予定
+  ├ README.md
+  └ .gitignore
 ```
