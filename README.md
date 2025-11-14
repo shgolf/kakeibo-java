@@ -1,5 +1,7 @@
 # kakeibo-java
 個人練習用
+
+```
 kakeibo-java/
  ├ src/
  │   └ main/
@@ -10,3 +12,4 @@ kakeibo-java/
  │               └ ui/cli/        ← 今はCLI、あとで ui/gui を増やすイメージ
  ├ README.md
  └ .gitignore
+```
